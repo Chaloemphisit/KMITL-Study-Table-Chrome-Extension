@@ -218,51 +218,51 @@ function switchNewDesign() {
                     <div class='s-container s-block'>
                         <div class='s-head-info'>
                             <div class='s-head-hour'>
-                                <div class='s-number'>0</div>
+                                <div class='s-number'>1</div>
                                 <div class='s-hourly-interval'>8.00-9.00</div>
                             </div>
                             <div class='s-head-hour'>
-                                <div class='s-number'>1</div>
+                                <div class='s-number'>2</div>
                                 <div class='s-hourly-interval'>9.00 - 10.00</div>
                             </div>
                             <div class='s-head-hour'>
-                                <div class='s-number'>2</div>
+                                <div class='s-number'>3</div>
                                 <div class='s-hourly-interval'>10.00 - 11.00</div>
                             </div>
                             <div class='s-head-hour'>
-                                <div class='s-number'>3</div>
+                                <div class='s-number'>4</div>
                                 <div class='s-hourly-interval'>11.00 - 12.00</div>
                             </div>
                             <div class='s-head-hour'>
-                                <div class='s-number'>4</div>
+                                <div class='s-number'>5</div>
                                 <div class='s-hourly-interval'>12.00 - 13.00</div>
                             </div>
                             <div class='s-head-hour'>
-                                <div class='s-number'>5</div>
+                                <div class='s-number'>6</div>
                                 <div class='s-hourly-interval'>13.00 - 14.00</div>
                             </div>
                             <div class='s-head-hour'>
-                                <div class='s-number'>6</div>
+                                <div class='s-number'>7</div>
                                 <div class='s-hourly-interval'>14.00 - 15.00</div>
                             </div>
                             <div class='s-head-hour'>
-                                <div class='s-number'>7</div>
+                                <div class='s-number'>8</div>
                                 <div class='s-hourly-interval'>15.00 - 16.00</div>
                             </div>
                             <div class='s-head-hour'>
-                                <div class='s-number'>8</div>
+                                <div class='s-number'>9</div>
                                 <div class='s-hourly-interval'>16.00 - 17.00</div>
                             </div>
                             <div class='s-head-hour'>
-                                <div class='s-number'>9</div>
+                                <div class='s-number'>10</div>
                                 <div class='s-hourly-interval'>17.00 - 18.00</div>
                             </div>
                             <div class='s-head-hour'>
-                                <div class='s-number'>10</div>
+                                <div class='s-number'>11</div>
                                 <div class='s-hourly-interval'>18.00 - 19.00</div>
                             </div>
                             <div class='s-head-hour'>
-                                <div class='s-number'>11</div>
+                                <div class='s-number'>12</div>
                                 <div class='s-hourly-interval'>19.00 - 20.00</div>
                             </div>
                         </div>
