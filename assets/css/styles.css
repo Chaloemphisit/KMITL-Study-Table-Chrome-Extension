@@ -19,7 +19,7 @@ body {
 .wrapper {
     position: absolute;
     top: 0px;
-    bottom: 60px;
+    bottom: 0px;
     left: 0px;
     right: 0px;
     overflow: auto;
@@ -54,8 +54,8 @@ body {
     font-family: "Roboto", sans-serif;
     position: absolute;
     left: 50%;
-    top: 370px;
-    transform: translate(-50%, -40%);
+    top: 190px;
+    transform: translate(-50%, 0);
     width: 100%;
 }
 
@@ -180,7 +180,7 @@ body {
 
 .s-container .s-rows-container .s-activities .s-act-row {
     position: relative;
-    height: 60px;
+    height: 80px;
 }
 
 .s-container .s-rows-container .s-activities .s-act-row .green {
@@ -268,8 +268,8 @@ body {
 /* ------------------------------------------------------- */
 
 .s-container .s-rows-container .s-activities .s-act-row .s-act-tab {
-    height: 55px;
-    padding: 15px;
+    height: 75px;
+    padding: 23px;
     border-radius: 3px;
     position: absolute;
     top: 5px
@@ -284,10 +284,18 @@ body {
     height: 100%;
 }
 
-.s-container .s-rows-container .s-activities .s-act-row .s-act-tab .s-act-teacher,
-.s-container .s-rows-container .s-activities .s-act-row .s-act-tab .s-act-room,
+.s-container .s-rows-container .s-activities .s-act-row .s-act-tab .s-act-building,
+.s-container .s-rows-container .s-activities .s-act-row .s-act-tab .s-act-room{
+    /* font-family: 'Kanit'; */
+    font-size: 11px;
+    color: white;
+    position: absolute;
+    margin: 5px;
+}
+
 .s-container .s-rows-container .s-activities .s-act-row .s-act-tab .s-act-group {
-    font-size: 7px;
+    /* font-family: 'Kanit'; */
+    font-size: 10px;
     color: white;
     position: absolute;
     margin: 5px;
@@ -303,7 +311,7 @@ body {
     font-size: 100%;
 }
 
-.s-container .s-rows-container .s-activities .s-act-row .s-act-tab .s-act-teacher {
+.s-container .s-rows-container .s-activities .s-act-row .s-act-tab .s-act-building {
     left: 0;
     top: 0;
 }
@@ -329,7 +337,7 @@ body {
 
 .s-hour-row .s-hour-wrapper .s-half-hour {
     width: 50%;
-    height: 60px;
+    height: 80px;
     border-left: 1.2px solid #e9e9e9;
 }
 
@@ -372,7 +380,11 @@ body {
 
 .content {
     padding-bottom: 40px;
-    margin-bottom: 40px;
+}
+
+.table-other {
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 footer {
@@ -382,7 +394,7 @@ footer {
     border-top: 1px solid #E7E7E7;
     text-align: center;
     padding: 15px;
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     height: 60px;
@@ -549,6 +561,9 @@ button:focus {
     .s-container .s-head-info .s-head-hour .s-hourly-interval {
         color: rgb(0, 0, 0);
     }
+    .centered {
+        top: 190px;
+    }
 }
 
 /* ------------- button --------------- */
@@ -618,4 +633,189 @@ button:focus {
 .btn.red:hover,
 .btn.red:focus {
     background-color: #c0392b;
+}
+
+/* ========================================================================== */
+
+/* Table */
+
+/* table.other {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 29.7cm;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+} */
+
+/* table.other * {
+    position: relative;
+} */
+
+table.other td,
+table.other th {
+    padding-left: 8px;
+}
+
+table.other thead tr th {
+    font-family: 'Kanit';
+    font-size: 20px;
+}
+
+/* table.other tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #E3F1D5;
+} */
+
+/* table.other tbody tr:last-child {
+    border: 0;
+} */
+
+table.other tbody tr:nth-child(even) {
+    background-color: #ffba7e27;
+}
+
+/* table.other td,
+table.other th {
+    text-align: left;
+}
+
+table.other td.l,
+table.other th.l {
+    text-align: right;
+} */
+
+table.other td.c,
+table.other th.c {
+    text-align: center;
+}
+
+table.other td.r,
+table.other th.r {
+    text-align: center;
+}
+
+/* ------------------------------------------ */
+
+table.other {
+    text-align: left;
+    line-height: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #ff8008;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 29.7cm;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+table.other thead tr:first-child {
+    background: #ff8008;
+    color: #fff;
+    border: none;
+}
+
+table.other th:first-child,
+table.other td:first-child {
+    padding: 0 -30px 0 20px;
+}
+
+table.other th {
+    font-weight: 500;
+}
+
+table.other thead tr:last-child th {
+    border-bottom: 3px solid #ddd;
+}
+
+table.other tbody tr:hover {
+    background-color: #f2f2f2;
+    cursor: default;
+}
+
+table.other tbody tr:last-child td {
+    border: none;
+}
+
+table.other tbody td {
+    font-family: 'Kanit';
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+table.other tbody td:nth-child(1),
+table.other tbody td:nth-child(4),
+table.other tbody td:nth-child(5),
+table.other tbody td:nth-child(6) {
+    text-align: center;
+}
+
+/* table.other td:last-child {
+    text-align: right;
+    padding-right: 10px;
+  } */
+
+@media screen and (max-width: 35.5em) {
+    table.other {
+        display: block;
+    }
+    table.other>*,
+    table.other tr,
+    table.other td,
+    table.other th {
+        display: block;
+    }
+    table.other thead {
+        display: none;
+    }
+    table.other tbody tr {
+        height: auto;
+        padding: 8px 0;
+    }
+    table.other tbody tr td {
+        padding-left: 45%;
+        margin-bottom: 12px;
+    }
+    table.other tbody tr td:last-child {
+        margin-bottom: 0;
+    }
+    table.other tbody tr td:before {
+        position: absolute;
+        font-weight: 700;
+        width: 40%;
+        left: 10px;
+        top: 0;
+    }
+    /* table.other tbody tr td:nth-child(1):before {
+        content: "Code";
+    }
+    table.other tbody tr td:nth-child(2):before {
+        content: "Stock";
+    }
+    table.other tbody tr td:nth-child(3):before {
+        content: "Cap";
+    }
+    table.other tbody tr td:nth-child(4):before {
+        content: "Inch";
+    }
+    table.other tbody tr td:nth-child(5):before {
+        content: "Box Type";
+    } */
 }

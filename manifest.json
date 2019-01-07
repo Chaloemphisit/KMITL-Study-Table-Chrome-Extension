@@ -23,7 +23,8 @@
         "http://www.reg.kmitl.ac.th/u_student/report_studytable_show.php*",
         "http://www2.reg.kmitl.ac.th/u_student/report_studytable_show.php*",
         "http://www3.reg.kmitl.ac.th/u_student/report_studytable_show.php*",
-        "http://www4.reg.kmitl.ac.th/u_student/report_studytable_show.php*"
+        "http://www4.reg.kmitl.ac.th/u_student/report_studytable_show.php*",
+        "file:///D:/SourceCode/chrome-extension/KMITL-Study-Table/Reg/www.reg.kmitl.ac.th.html"
       ]
     }
   ]
