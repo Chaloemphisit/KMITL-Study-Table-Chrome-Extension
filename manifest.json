@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "KMITL Study Table",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "author": "Chaloemphisit Sirichai",
   "description": "Chrome extension to re-render user interface for KMITL Study Table page. It is designed base on old design adding some features",
   "icons": {
@@ -24,7 +24,7 @@
         "http://www2.reg.kmitl.ac.th/u_student/report_studytable_show.php*",
         "http://www3.reg.kmitl.ac.th/u_student/report_studytable_show.php*",
         "http://www4.reg.kmitl.ac.th/u_student/report_studytable_show.php*",
-        "file:///D:/SourceCode/chrome-extension/KMITL-Study-Table/Reg/www.reg.kmitl.ac.th.html"
+        "file:///D:/SourceCode/chrome-extension/Reg/www.reg.kmitl.ac.th.html"
       ]
     }
   ]
