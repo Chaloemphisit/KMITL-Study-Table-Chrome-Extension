@@ -219,7 +219,7 @@ function switchNewDesign() {
                         <div class='s-head-info'>
                             <div class='s-head-hour'>
                                 <div class='s-number'>1</div>
-                                <div class='s-hourly-interval'>8.00-9.00</div>
+                                <div class='s-hourly-interval'>8.00 - 9.00</div>
                             </div>
                             <div class='s-head-hour'>
                                 <div class='s-number'>2</div>
@@ -843,7 +843,7 @@ var schedule = {
                         + /* MINUTES */ parseInt(hours[0].split(".")[1]),
                     end = /* HOURS */ parseInt(hours[1].split(".")[0] * 60)
                         + /* MINUTES */ parseInt(hours[1].split(".")[1]),
-                    duration = end - start,
+                    duration = (end - start),
                     translateX = schedule.general.getPosition(start, duration, end)[0],
                     width = schedule.general.getPosition(start, duration, end)[1];
 
