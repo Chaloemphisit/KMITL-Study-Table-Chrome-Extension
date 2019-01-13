@@ -534,7 +534,7 @@ button:focus {
     }
     body {
         background: #ffffff;
-        /* transform: scale(.90); */
+        /* transform: scale(.88); */
         -webkit-print-color-adjust: exact;
     }
     .top {
@@ -550,13 +550,24 @@ button:focus {
         color: rgb(0, 0, 0);
     }
     #schedule {
-        box-shadow: 0 2px 4px rgba(100, 100, 100, 1);
+        border: 1px solid black;
+        /* box-shadow: 0 2px 4px rgba(100, 100, 100, 1); */
     }
+
+    .s-legend .s-week-day {
+        box-shadow: inset 0 1px 0 0.5px #000000;
+    }
+
+    .s-container .s-head-info .s-head-hour {
+        border: 1px solid black;
+    }
+
     .s-container .s-head-info .s-head-hour {
         border-left: 1.2px solid rgb(0, 0, 0);
     }
     .s-hour-row .s-hour-wrapper .s-half-hour:nth-child(2) {
-        border-left: 0.5px solid rgba(100, 100, 100, .5);
+        /* border-left: 0.5px solid rgba(100, 100, 100, .5); */
+        border-left: 0.5px solid #FFF;
     }
     .s-hour-row .s-hour-wrapper .s-half-hour {
         border-left: 1.2px solid rgb(0, 0, 0);
@@ -566,7 +577,36 @@ button:focus {
     }
     .centered {
         top: 210px;
-        zoom:.85;
+        zoom: .85;
+    }
+    .s-container .s-rows-container .s-activities .s-act-row .green,
+    .s-container .s-rows-container .s-activities .s-act-row .orange,
+    .s-container .s-rows-container .s-activities .s-act-row .red,
+    .s-container .s-rows-container .s-activities .s-act-row .dayTripper,
+    .s-container .s-rows-container .s-activities .s-act-row .blue,
+    .s-container .s-rows-container .s-activities .s-act-row .pink,
+    .s-container .s-rows-container .s-activities .s-act-row .atlas,
+    .s-container .s-rows-container .s-activities .s-act-row .electricViolet,
+    .s-container .s-rows-container .s-activities .s-act-row .windy,
+    .s-container .s-rows-container .s-activities .s-act-row .bloodyMary,
+    .s-container .s-rows-container .s-activities .s-act-row .green-r,
+    .s-container .s-rows-container .s-activities .s-act-row .orange-r,
+    .s-container .s-rows-container .s-activities .s-act-row .red-r,
+    .s-container .s-rows-container .s-activities .s-act-row .dayTripper-r,
+    .s-container .s-rows-container .s-activities .s-act-row .blue-r,
+    .s-container .s-rows-container .s-activities .s-act-row .pink-r,
+    .s-container .s-rows-container .s-activities .s-act-row .atlas-r,
+    .s-container .s-rows-container .s-activities .s-act-row .electricViolet-r,
+    .s-container .s-rows-container .s-activities .s-act-row .windy-r,
+    .s-container .s-rows-container .s-activities .s-act-row .bloodyMary-r {
+        background: #ffffff;
+        border: 1px solid black;
+    }
+    .s-container .s-rows-container .s-activities .s-act-row .s-act-tab .s-act-building,
+    .s-container .s-rows-container .s-activities .s-act-row .s-act-tab .s-act-room,
+    .s-container .s-rows-container .s-activities .s-act-row .s-act-tab .s-act-group,
+    .s-container .s-rows-container .s-activities .s-act-row .s-act-tab .s-act-name {
+        color: black;
     }
 }
 
