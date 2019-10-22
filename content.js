@@ -22,8 +22,6 @@ function convertDayToNumber(day) {
 
 function modTime(time) {
 
-
-
     var res = time.split(" ");
 
     var length = res.length;
