@@ -19,10 +19,7 @@
         "content.js"
       ],
       "matches": [
-        "https://www.reg.kmitl.ac.th/u_student/report_studytable_show.php*",
-        "https://www2.reg.kmitl.ac.th/u_student/report_studytable_show.php*",
-        "https://www3.reg.kmitl.ac.th/u_student/report_studytable_show.php*",
-        "https://www4.reg.kmitl.ac.th/u_student/report_studytable_show.php*"
+        "*://*.reg.kmitl.ac.th/u_student/report_studytable_show.php*"
       ]
     }
   ]
