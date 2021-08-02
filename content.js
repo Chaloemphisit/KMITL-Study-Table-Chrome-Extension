@@ -24,7 +24,7 @@ function modTime(time) {
 
 
 
-    var res = time.split(" ");
+    var res = time.replace("+", "").split(" ");
 
     var length = res.length;
 
@@ -34,9 +34,14 @@ function modTime(time) {
 
         var day2;
         if (length > 3) {
-            var temp = res[2].replace("น.(", "").replace(")", "").split("\n");
+            var temp = res[2].replace("น.", "").replace("(", "").replace(")", "").split("\n");
             type1 = temp[0];
             day2 = temp[1]
+        }
+        var day3;
+        if (length > 5) {
+            var temp = res[4].replace("น.", "").replace("(", "").replace(")", "").split("\n");
+            day3 = temp[1]
         }
 
         console.log("day >>> " + res[0])
@@ -47,9 +52,13 @@ function modTime(time) {
             time: res[1].replace(":", ".").replace(":", "."),
             type: type1,
             isTwo: length > 3 ? true : false,
+            isThree: length > 5 ? true : false,
             day2: length > 3 ? convertDayToNumber(day2.replace(".", "")) : null,
             time2: length > 3 ? res[3].replace(":", ".").replace(":", ".") : null,
-            type2: length > 3 ? res[4].replace("น.(", "").replace(")", "") : null
+            type2: length > 3 ? res[4].replace("น.", "").replace("(", "").replace(")", "").split("\n")[0] : null,
+            day3: length > 5 ? convertDayToNumber(day3.replace(".", "")) : null,
+            time3: length > 5 ? res[5].replace(":", ".").replace(":", ".") : null,
+            type3: length > 5 ? res[6].replace("น.", "").replace("(", "").replace(")", "") : null
         };
         return obj;
 
@@ -544,6 +553,9 @@ if (n !== 0) {
             schedule.activities.add(arr[i].time.day, arr[i].subject, arr[i].time.time, "section " + arr[i].theory + " (" + arr[i].time.type + ")", (arr[i].building + " " + arr[i].room), color[(i % 9)]);
             if (arr[i].time.isTwo) {
                 schedule.activities.add(arr[i].time.day2, arr[i].subject, arr[i].time.time2, "section " + arr[i].practice + " (" + arr[i].time.type2 + ")", "", color_r[(i % 9)]);
+            }
+            if (arr[i].time.isThree) {
+                schedule.activities.add(arr[i].time.day3, arr[i].subject, arr[i].time.time3, "section " + arr[i].practice + " (" + arr[i].time.type3 + ")", "", color_r[(i % 9)]);
             }
         }
         // console.log((i % 6) + ", " + color[i % 6])
